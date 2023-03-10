@@ -84,5 +84,37 @@ def test_CaesarCipher():
     decrypted = cipher.decrypt(encrypted, key)
     assert decrypted == "msg"
     
+
+def test_DES():
     
+    des = DES()
+    msg = "message"
+    key = "16 caracteres !!"
+    encrypted = des.encrypt(msg, key)
+    assert encrypted == "c746f006ae2af1b3"
+    
+
+def test_MD5():
+    
+    md5 = MD5()
+    msg = "message"
+    encrypted = md5.encrypt(msg)
+    assert encrypted == "78e731027d8fd50ed642340b7c9a63b3"
+    
+
+def test_SHA():
+    
+    sha = SHA()
+    msg = "message"
+    encrypted = sha.encrypt(msg)
+    assert encrypted == "f8daf57a3347cc4d6b9d575b31fe6077e2cb487f60a96233c08cb479dbf31538cc915ec6d48bdbaa96ddc1a16db4f4f96f37276cfcb3510b8246241770d5952c"
+    
+def test_VigenereCipher():
+    
+    vig = VigenereCipher()
+    msg = "message"
+    key = 'abcd'
+    encrypted = vig.encrypt(msg, key)
+    assert encrypted == 'mfuvahg'
+
     
