@@ -4,3 +4,4 @@ from crypto_app.servercore import ServerCore
 
 server = ServerCore()
 server.launchServer()
+

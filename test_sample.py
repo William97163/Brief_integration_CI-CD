@@ -21,7 +21,6 @@ from crypto_app.caesarcipher_algo import CaesarCipher
 from crypto_app.des_algo import DES
 from crypto_app.enigmam3_algo import EnigmaM3
 from crypto_app.md5_algo import MD5
-from crypto_app.rsa_algo import RSAAlgo
 from crypto_app.sha_algo import SHA
 from crypto_app.vigenerecipher_algo import VigenereCipher
 
