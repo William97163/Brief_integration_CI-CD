@@ -29,11 +29,10 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
 
-        # Install pytest
-      - name: Install pytest
+        # Install requirements.txt
+      - name: Install requirements.txt
         run: |
           python -m pip install --upgrade pip
-          pip install pytest
           pip install -r requirements.txt
 
         # Run the tests
